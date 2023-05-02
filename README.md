@@ -1,20 +1,14 @@
 ## ✨ lsp-codemirror
 
-LSP client for CodeMirror, intends to be a more updated and better version of the original client --> https://github.com/wylieconlon/lsp-editor-adapter (thanks to Wylie :D )
+LSP client for CodeMirror, intends to be a more updated and better version of the original 
+client --> https://github.com/wylieconlon/lsp-editor-adapter (thanks to Wylie :D )
 
-## 🤔 Differences
+## Differences
 - Autocompletion improvements
 - Built-in icons
 - Support for custom autocompletion dropmenus
 
-## 🤖 Installation
-
-```shell
-npm install lsp-codemirror
-```
-
-## ✍🏻 Usage 
-
+## Usage 
 ```javascript
 import CodeMirror from 'codemirror';
 import { LspWsConnection, CodeMirrorAdapter } from 'lsp-codemirror';
@@ -34,4 +28,4 @@ const javascriptAdapter = new CodeMirrorAdapter(javascriptConnection, {
 }, editor);
 ```
 
-All options for CodeMirrorAdapter in: https://github.com/marc2332/lsp-codemirror/blob/aed38cc89e992b0b9aa7ee91cd298a4607a87b60/src/types.ts#L144
+All options for CodeMirrorAdapter in src/types.ts
