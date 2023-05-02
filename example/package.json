@@ -1,7 +1,7 @@
 {
 	"scripts": {
 		"server": "node server.js",
-		"start": "run-p server parcel",
+		"start": "concurrently \"run-p server parcel\" \"open http://localhost:4000\"",
 		"parcel": "parcel watch index.html"
 	},
 	"dependencies": {
@@ -13,7 +13,9 @@
 		"vscode-html-languageserver-bin": "^1.4.0"
 	},
 	"devDependencies": {
+		"concurrently": "^8.0.1",
+		"npm-run-all": "^4.1.5",
 		"parcel": "^1.12.4",
-		"npm-run-all": "^4.1.5"
+		"typescript": "^5.0.4"
 	}
 }

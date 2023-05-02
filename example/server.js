@@ -15,20 +15,20 @@ app.listen(4000, () => {
 
 app.use(express.static('dist'));
 
-new rpcWS({
+rpcWS({
 	port: 3001,
-	languageServers:{
-		typescript:[
+	languageServers: {
+		typescript: [
 			'node',
 			'./node_modules/typescript-language-server/lib/cli.js',
 			'--stdio'
 		],
-		html:[
+		html: [
 			'node',
 			'./node_modules/vscode-html-languageserver-bin/htmlServerMain.js',
 			'--stdio'
 		],
-		css:[
+		css: [
 			'node',
 			'./node_modules/vscode-css-languageserver-bin/cssServerMain.js',
 			'--stdio'
